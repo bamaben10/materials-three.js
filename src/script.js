@@ -40,6 +40,9 @@ const scene = new THREE.Scene();
 // material.alphaMap = doorAlphaTexture;
 // material.side = THREE.DoubleSide;
 
+const material = new THREE.MeshNormalMaterial();
+// material.flatShading = true;
+
 const sphere = new THREE.Mesh(
   new THREE.SphereBufferGeometry(0.5, 16, 16),
   material
